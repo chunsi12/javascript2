@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>new document</title>
+<SCRIPT>
+	let scope = "global"; // 전역변수
+	function checkscope() {
+		let scope = "local"; // 지역변수 선언
+		document.write(scope); // 지역변수 우선권
+	}
+	checkscope();
+	document.write("<br>");
+	document.write(scope); // 전역변수
+</SCRIPT>
+</head>
+<body>
+</body>
+</html>
